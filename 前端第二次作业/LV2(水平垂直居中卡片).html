@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style type="text/css">
+		html,body{
+			height: 100%;
+		}
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.box{
+			width: 400px;
+			height: 480px;
+		}
+		.box:hover{
+						/*左右阴影  上下阴影   模糊半径    扩散半径        颜色设置      */
+			box-shadow: 0px           0px       5px        3px        rgba(62, 61, 61, 0.5);
+			transform: scale(1.1);
+			transition-duration:0.7s
+		}
+		img:hover{
+			transform: scale(1.1);
+			transition-duration:0.8s
+		}
+		 a{
+			
+			text-decoration: none;
+			text-align: center;
+			color: white;
+		} 
+		.buttonBox{
+			background-color: rgb(141, 141, 239);
+			width: 150px;
+			text-decoration: none;
+			text-align: center;
+			color: rgb(255, 255, 255);
+			height: 25px;
+			border-radius: 20px;
+			margin:auto
+		}
+		.buttonBox:hover{
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div style="border: 3px solid #000; " class="box">
+		<img src="../前端第二次作业/img/eldenring.png" alt="" width="400px" height="230px">
+		<h2>EldenRing</h2>
+		<p>故事发生在名为“交界地”的地方，这里的人们拥戴永恒女王玛莉卡，也受到她的祝福。
+			所有接受祝福的人瞳孔中都有黄金一般的光芒，但也有些人因为各种原因失去了赐福，眼中的光芒消逝。这些人就被称为褪色者，并因此被逐出交界地。</p>
+			<div class="buttonBox"><a href="###">觐见艾尔登之王</a></div>
+	</div>
+</body>
+</html>
